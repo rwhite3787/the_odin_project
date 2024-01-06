@@ -1,0 +1,138 @@
+:root {
+    --purple: #5E338D;
+    --blue: #0354AB;
+    --yellow: #F7D127;
+    --red: #CF0E1B;
+    --gray: #ECEFF1;
+
+}
+
+body, #intro, .images, .links, .pic-and-cap, #header, #quote {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+body > * {
+    width: 100%;
+}
+
+#intro, #image-section, #quote {
+    height: 60vh;
+}
+
+
+#header {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: var(--blue);
+    padding: 8px;
+}
+
+.logo {
+    padding-top: 2px;
+    padding-left: 20px;
+}
+
+.links {
+    gap: 15px;
+    font-size: 20px;
+    padding-right: 20px;
+    font-family: "Recursive", Tahoma;
+}
+
+#intro {
+    justify-content: space-evenly;
+    background-color: var(--purple);
+    align-items: center;
+}
+
+.intro-info > p {
+    width: 400px;
+    color: var(--yellow);
+    font-size: 24px;
+}
+
+h1 {
+    color: var(--gray);
+    text-align: center;
+    font-family: "Rampart One", san-serif;
+    font-size: 42px;
+}
+
+h2 {
+    color: var(--red);
+    font-size: 38px;
+    font-family: "Rampart One", san-serif;
+}
+
+#image-section {
+    background-color: var(--yellow);
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+
+.images {
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--red);
+}
+
+.pic-and-cap {
+    flex-direction: column;
+    width: 18%;
+    font-family: "Recursive", Tahoma;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+button {
+    padding: 4px;
+    font-size: 16px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.caption {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+#quote {
+    flex-direction: column;
+    background-color: var(--red);
+}
+
+blockquote {
+    width: 50%;
+    font-size: 32px;
+    margin: 80px auto 25px auto;
+    color: var(--gray);
+}
+
+.attr {
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+    color: var(--yellow);
+    font-family: "Rock Salt", Verdana;
+}
+
+.footer {
+    background-color: var(--gray);
+    color: var(--blue);
+    text-align: center;
+    font-size: 20px;
+    padding: auto;
+    font-family: "Recursive", Tahoma;
+}
